@@ -3,11 +3,13 @@ Camps On The Air (COTA) - A community driven amateur radio camping activity conc
 
 ## What is COTA?
 
-Camps On The Air is a proposed amateur radio activity focused on portable operation from camping locations.
+Camps On The Air (COTA) is a proposed amateur radio activity designed to encourage portable operation from campgrounds and camping locations.
 
-The idea is simple:
+Unlike many existing award programs, COTA aims to be relaxed, accessible and community-driven. The idea is simple:
 
-Go camping. Bring a radio.
+If you're going camping, bring a radio.
+
+Whether you operate from a provincial campground, a forestry recreation site, a national park campground or a remote backcountry location, COTA is intended to celebrate portable radio, camping and the outdoors.
 
 ## Current status
 
