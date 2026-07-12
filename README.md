@@ -15,13 +15,13 @@ Whether you operate from a provincial campground, a forestry recreation site, a 
 
 Many amateur radio operators already enjoy:
 
-Camping
-Portable stations
-Vehicle builds
-Backpacking
-Overlanding
-Hiking
-Exploring
+- Camping
+- Portable stations
+- Vehicle builds
+- Backpacking
+- Overlanding
+- Hiking
+- Exploring
 
 COTA brings those interests together.
 
