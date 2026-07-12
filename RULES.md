@@ -22,5 +22,5 @@ Proposed:
 
 Potential future additions:
 
-- Private campgrounds by recomendation/review
-- Backcountry locations as a seperate catagory
+- Private campgrounds by recommendation/review
+- Backcountry locations as a separate category
