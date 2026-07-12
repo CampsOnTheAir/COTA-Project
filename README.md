@@ -1,44 +1,151 @@
-# COTA-Project
-Camps On The Air (COTA) - A community driven amateur radio camping activity concept
+# COTA - Camps On The Air Project
 
-## What is COTA?
+## Overview
+COTA (Camps On The Air) is a community-driven amateur radio camping activity system that allows radio operators to log contacts while camping at various parks and campgrounds.
 
-Camps On The Air (COTA) is a proposed amateur radio activity designed to encourage portable operation from campgrounds and camping locations.
+## Features
 
-Unlike many existing award programs, COTA aims to be relaxed, accessible and community-driven. The idea is simple:
+### 📡 Contact Logging
+- Log amateur radio contacts with detailed information
+- Track frequency, mode, and signal reports
+- Reference operator and park information
+- Add notes and equipment details
+- View recent contacts with filtering
 
-If you're going camping, bring a radio.
+### 🏕️ Park Management
+- Maintain database of campgrounds and parks
+- Store location coordinates
+- Track activation history by park
+- View statistics by location
 
-Whether you operate from a provincial campground, a forestry recreation site, a national park campground or a remote backcountry location, COTA is intended to celebrate portable radio, camping and the outdoors.
+### 💡 Suggestion System
+- Submit new campground suggestions
+- Track amenities (parking, power, water)
+- Include access information and contact details
+- Admin review and approval workflow
+- Convert approved suggestions to parks
 
-## Why?
+### 📊 Statistics & Analytics
+- Contact statistics by park
+- Operator activity tracking
+- Daily activation summaries
+- Radio frequency usage reports
 
-Many amateur radio operators already enjoy:
+## Project Structure
 
-- Camping
-- Portable stations
-- Vehicle builds
-- Backpacking
-- Overlanding
-- Hiking
-- Exploring
+```
+COTA-Project/
+├── database/
+│   ├── schema.sql           # Main database schema
+│   └── schema_suggestions.sql   # Suggestion table schema
+├── web/
+│   └── index.html           # Interactive web interface
+├── backend/
+│   ├── app.py              # Flask API backend
+│   ├── requirements.txt     # Python dependencies
+│   └── .env.example        # Environment configuration
+└── README.md
+```
 
-COTA brings those interests together.
+## Setup Instructions
 
-## Vision
+### 1. Database Setup
+```bash
+# Create database
+mysql -u root -p < database/schema.sql
+mysql -u root -p < database/schema_suggestions.sql
+```
 
-COTA is intended to encourage operators to bring amateur radio into their outdoor adventures.
+### 2. Backend Setup
+```bash
+cd backend
+pip install -r requirements.txt
+cp .env.example .env
+# Edit .env with your database credentials
+python app.py
+```
 
-Whether someone is operating with a handheld from a campsite, a portable HF station from the backcountry, or a vehicle-based setup from a remote location, all forms of portable operation are welcome.
+### 3. Web Interface
+- Open `web/index.html` in a web browser
+- Or serve through a web server pointing to the web directory
 
-The goal is simple:
+## API Endpoints
 
-Go camping. Bring a radio.
+### Contacts
+- `GET /api/contacts` - List all contacts
+- `POST /api/contacts` - Create new contact
+- `GET /api/stats/operators` - Operator statistics
 
-## Current status
+### Parks
+- `GET /api/parks` - List all parks
+- `POST /api/parks` - Create new park
 
-This is a community discussion project.
+### Suggestions
+- `GET /api/suggestions` - List all suggestions
+- `GET /api/suggestions/{id}` - Get suggestion details
+- `POST /api/suggestions` - Submit new suggestion
+- `PATCH /api/suggestions/{id}` - Update suggestion status (admin)
 
-Rules, awards and systems are not final.
+### Statistics
+- `GET /api/stats/parks` - Park statistics
+- `GET /api/stats/operators` - Operator statistics
 
-Feedback and contributions are welcome.
+## Database Schema
+
+### Core Tables
+- **parks** - Park/campground reference data
+- **campgrounds** - Specific camping sites
+- **operators** - Radio operators
+- **contacts** - Individual radio contacts
+- **activations** - Park activation sessions
+- **equipment** - Radio equipment inventory
+- **campground_suggestions** - User-submitted suggestions
+
+### Views
+- `v_recent_contacts` - Latest contacts with details
+- `v_park_summary` - Park statistics
+- `v_pending_suggestions` - Suggestions awaiting review
+
+## Features Explained
+
+### Log a Contact
+1. Navigate to "Log Contact" tab
+2. Enter your call sign and name
+3. Select contact date/time
+4. Choose the park where you made contact
+5. Enter remote station details (call sign, location, etc.)
+6. Specify frequency and mode
+7. Add signal reports and notes
+8. Submit
+
+### Suggest a Campground
+1. Navigate to "Suggest a Campground" tab
+2. Provide campground details
+3. Include amenities and access information
+4. Add coordinates if known
+5. Submit for admin review
+
+### Admin Panel
+1. View all pending and under-review suggestions
+2. Click "Review" to see full details
+3. Add admin notes
+4. Approve (creates new park entry) or reject
+5. Approved suggestions become available parks
+
+## Technology Stack
+- **Database**: MySQL/MariaDB
+- **Backend**: Python/Flask
+- **Frontend**: HTML5, CSS3, JavaScript
+- **API**: RESTful JSON
+
+## Contributing
+Submit suggestions for new campgrounds through the web interface.
+
+## Future Enhancements
+- K4 Award integration
+- ARRL Parks on the Air tracking
+- Mobile app
+- Email notifications for approved suggestions
+- Advanced reporting and analytics
+- User authentication and roles
+- Integration with frequency databases
