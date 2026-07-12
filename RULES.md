@@ -6,9 +6,9 @@ Nothing here is final.
 
 ## Basic activation
 
-• Operate from an eligible campsite
-• Complete 15 QSOs
-• Within a 48 hour period
+- Operate from an eligible campsite
+- Complete 15 QSOs
+- Within a 48 hour period
 
 
 ## Eligible sites
