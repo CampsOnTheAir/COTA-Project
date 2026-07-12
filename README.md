@@ -11,6 +11,20 @@ If you're going camping, bring a radio.
 
 Whether you operate from a provincial campground, a forestry recreation site, a national park campground or a remote backcountry location, COTA is intended to celebrate portable radio, camping and the outdoors.
 
+## Why?
+
+Many amateur radio operators already enjoy:
+
+Camping
+Portable stations
+Vehicle builds
+Backpacking
+Overlanding
+Hiking
+Exploring
+
+COTA brings those interests together.
+
 ## Current status
 
 This is a community discussion project.
