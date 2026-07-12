@@ -25,6 +25,16 @@ Many amateur radio operators already enjoy:
 
 COTA brings those interests together.
 
+## Vision
+
+COTA is intended to encourage operators to bring amateur radio into their outdoor adventures.
+
+Whether someone is operating with a handheld from a campsite, a portable HF station from the backcountry, or a vehicle-based setup from a remote location, all forms of portable operation are welcome.
+
+The goal is simple:
+
+Go camping. Bring a radio.
+
 ## Current status
 
 This is a community discussion project.
